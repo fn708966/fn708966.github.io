@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="controllericon" href="icon.jpg">
+  <title>index.html</title>
+</head>
+
+<body>
+
+  <link href="styles.css" rel="stylesheet">
+  <link href="script.js" rel="script">
+  <!-- Site Header -->
+  <div id="header">
+    <img src="sitebanner.jpg" alt="banner" width="880" height="293">
+
+    <h1>Game Developer</h1>
+    <table>
+      <tr>
+        <td><a href="index.html"><h2>Home</h2></a></td>
+        <td><a href="experience.html"><h2>Experience</h2></a></td>
+        <td><a href="games.html"><h2>Favorite Games</h2></a></td>
+      </tr>
+    </table>
+  </div>
+
+  <script>
+    //Buttons to change site color
+    function changeColor(color) {
+      document.getElementById("header").style.backgroundColor = color;
+      document.getElementById("footer").style.backgroundColor = color;
+    }
+  </script>
+
+  <p>Change Color:</p>
+  <div id="buttons">
+    <div><button onclick="changeColor('#00FFFF') "id="button1" >Color 1</button></div>
+    <div><button onclick="changeColor('#90ee90') "id="button2">Color 2</button></div>
+    <div><button onclick="changeColor('#008080') "id="button3">Color 3</button></div>
+  </div>
+
+  <!-- Home -->
+  <h2>Home</h2>
+  <p>
+    The career of my choice is a Game Developer.
+    The experience section contains past jobs and education.
+    <br>
+    The favorite games section contains some of my favorite elements of games.
+    Click the links at the top of the page to open either of these sections.
+  </p>
+
+  <!-- Projects -->
+  <h2>Projects</h2>
+  <div class="projects_text">
+    <a href="https://codehs.com/sandbox/id/7-minutes-Q6sLdq" ><img src="project.png" alt="project" width="520" height="343"></a>
+    <span>
+      Seven Minutes is text based adventure game where the aim is to escape a simulation before the timer runs out.
+      Progress through a series of rooms with unique challenges to reach the end.
+      <br>
+      Pieces of information can be found along the way that give some backstory to the world.
+      Click the picture to play Seven Minutes.
+    </span>
+  </div>
+
+</body>
+
+<footer id="footer">
+  <link href="styles.css" rel="stylesheet">
+  <br>
+  <p>Finn Harper 2023</p>
+</footer>
+
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="controllericon" href="icon.jpg">
+  <title>Favorite Games</title>
+</head>
+
+<body>
+
+  <link href="styles.css" rel="stylesheet">
+  <link href="script.js" rel="script">
+  <!-- Site Header -->
+  <div id="header">
+    <img src="sitebanner.jpg" alt="banner" width="880" height="293">
+
+    <h1>Game Developer</h1>
+    <table>
+      <tr>
+        <td><a href="index.html"><h2>Home</h2></a></td>
+        <td><a href="experience.html"><h2>Experience</h2></a></td>
+        <td><a href="games.html"><h2>Favorite Games</h2></a></td>
+      </tr>
+    </table>
+  </div>
+
+  <p>Change Color:</p>
+  <div id="buttons">
+    <div><button onclick="changeColor('#00FFFF')" id="button1" >Color 1</button></div>
+    <div><button onclick="changeColor('#90ee90')" id="button2">Color 2</button></div>
+    <div><button onclick="changeColor('#008080')" id="button3">Color 3</button></div>
+  </div>
+
+  <!-- Favorite Games -->
+  <h2>Favorite Games</h2>
+  <ol>
+    <li>Destiny 2</li>
+    <li>Fortnite</li>
+    <li>Warframe</li>
+    <li>Control</li>
+    <li>Hi-Fi Rush</li>
+  </ol>
+
+  <script>
+    //Buttons to change site color
+    function changeColor(color) {
+      document.getElementById("header").style.backgroundColor = color;
+      document.getElementById("footer").style.backgroundColor = color;
+    }
+    function playAudio() {
+      let audio = document.getElementById("audio");
+      audio.play();
+    }
+  </script>
+  <div>
+    <p>Play audio file:</p>
+    <button onclick="playAudio()">Play</button>
+    <audio id="audio" src="destiny2audio.mp3"></audio>
+  </div>
+
+  <!--Destiny 2 -->
+  <iframe width="460" height="250" src="https://www.youtube.com/embed/jgv00uCRt60"></iframe>
+  <p>
+    Destiny 2 is an Action Mmo developed by Bungie and released in 2017.
+    One of the crucial parts of why Destiny 2 has been so successful is its gameplay.
+    <br>
+    The combat offers a lot of variability in how you play while still being consistently enjoyable.
+    The above trailer showcases some of this aspect.
+  </p>
+
+  <!-- Fortnite -->
+  <a href="https://fortnite.fandom.com/wiki/Vaulted_Items#Weapons">A catalog of Fortnite' various content additions</a>
+  <p>
+    Fortnite is a battle royale game developed by Epic Games and released in 2017.
+    Over the 5+ years Fortnite has existed, players interest has been retained by the consistent expansion of the game.
+    <br>
+    The variety of additions have provided continued development for the game.
+    Click the above link for a preview of some Fortnite additions.
+  </p>
+
+  <!-- Warframe -->
+  <iframe width="460" height="250" src="https://www.youtube.com/embed/ykH4gxSlrJ4"></iframe>
+  <p>
+    Warframe is an action game developed by Digital Extremes and released in 2013.
+    A central element of the games playstyle is the rapid movement able to be performed.
+    <br>
+    Being able to quickly traverse each area is what sets Warframe apart from other games.
+    The above video showcases a demo of Warframe movement.
+  </p>
+
+  <!-- Control -->
+  <audio controls>
+    <source src="audio.mp3">
+  </audio>
+  <p>
+    Control is a cinematic story game developed by Remedy Entertainment and released in 2019.
+    The audio in Control makes the cinematic nature much more potent.
+    <br>
+    The individual sound effects are able to build an immersive playthrough.
+    Play the above audio clip for a sample of Control's audio.
+  </p>
+
+  <!-- Hi-Fi Rush -->
+  <video controls width="460" height="250">
+    <source src="video.mp4">
+  </video>
+  <p>
+    Hi-Fi Rush is a rhythm based action game developed by Tango Gameworks and released in 2023.
+    In the short time the game has been out, one of its most enduring qualities has been the art style.
+    <br>
+    The cartoon reminiscent and often whimsical style adds a distinct amount of character to Hi-Fi Rush.
+    The above video shows the games visuals.
+  </p>
+
+</body>
+
+<footer id="footer">
+  <link href="styles.css" rel="stylesheet">
+  <br>
+  <p>Finn Harper 2023</p>
+</footer>
+
+</html>

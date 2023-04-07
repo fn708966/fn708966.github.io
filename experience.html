@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="controllericon" href="icon.jpg">
+  <title>Experience</title>
+</head>
+
+<body>
+
+  <link href="styles.css" rel="stylesheet">
+  <link href="script.js" rel="script">
+  <!-- Site Header -->
+  <div id="header">
+    <img src="sitebanner.jpg" alt="banner" width="880" height="293">
+
+    <h1>Game Developer</h1>
+    <table>
+      <tr>
+        <td><a href="index.html"><h2>Home</h2></a></td>
+        <td><a href="experience.html"><h2>Experience</h2></a></td>
+        <td><a href="games.html"><h2>Favorite Games</h2></a></td>
+      </tr>
+    </table>
+  </div>
+
+  <script>
+    //Buttons to change site color
+    function changeColor(color) {
+      document.getElementById("header").style.backgroundColor = color;
+      document.getElementById("footer").style.backgroundColor = color;
+    }
+  </script>
+
+  <p>Change Color:</p>
+  <div id="buttons">
+    <div><button onclick="changeColor('#00FFFF')" id="button1" >Color 1</button></div>
+    <div><button onclick="changeColor('#90ee90')" id="button2">Color 2</button></div>
+    <div><button onclick="changeColor('#008080')" id="button3">Color 3</button></div>
+  </div>
+
+  <!-- Experience -->
+  <h2>Experience</h2>
+    <img src="me.jpg" alt="me-img" width="256" height="222">
+
+  <div class="experience">
+  <!-- Jobs -->
+    <div class="jobs">
+      <p><b>Jobs</b></p>
+      <ul>
+        <li>Atlantic Superstore</li>
+        <ul>
+          <li>Salad Bar</li>
+          <li>2019 - Present</li>
+        </ul>
+      </ul>
+    </div>
+
+    <!-- Education -->
+  <div class="education">
+    <p><b>Education</b></p>
+    <ul>
+      <li> Bay View High School</li>
+      <ul>
+        <li>Graduated 2022</li>
+      </ul>
+      <li>Dalhousie University</li>
+      <ul>
+        <li>Studying Bachelor of Computer Science</li>
+        <li>2022 - Present</li>
+      </ul>
+    </ul>
+  </div>
+
+  <!-- Projects -->
+    <div class="projects">
+      <p><b>Projects</b></p>
+      <ul>
+        <li>Seven Minutes</li>
+        <ul>
+          <li>Finished 2019</li>
+        </ul>
+      </ul>
+    </div>
+  </div>
+
+</body>
+
+<footer id="footer">
+  <link href="styles.css" rel="stylesheet">
+  <br>
+  <p>Finn Harper 2023</p>
+</footer>
+
+</html>

@@ -1,0 +1,116 @@
+/*index.html styles*/
+    /*Image, makes corners rounded*/
+    img {
+        border-radius: 8px;
+        padding-right: 5px;
+        margin-left: auto;
+    }
+    /*Navigation bar, adds space between each nav element.*/
+    td {
+        padding-right: 20px;
+    }
+    /*Text for projects section, aligns text with image.*/
+    .projects_text {
+        display: flex;
+        align-items: end;
+        padding-bottom: 10px;
+    }
+    /*Footer*/
+    footer {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+/*experience.html styles*/
+    /*Text on experience page, aligns the text sections on one line*/
+    .experience {
+        display: grid;
+        grid-template-columns: 150px 200px;
+        grid-template-rows: 100px 150px;
+        gap: 60px 40px;
+    }
+    /*Jobs list, sets place within grid*/
+    .jobs {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    /*Education list, sets place within grid*/
+    .education {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    /*Projects list, sets place within grid*/
+    .projects {
+        grid-column: 1;
+        grid-row: 2;
+    }
+/*Selectors*/
+    /*Universal Selector, changes the color of all paragraphs*/
+    p * {
+        color:blue;
+        background-color: orange;
+    }
+    /*Multiple Selector, changes the color of all links and h1 headers*/
+    h1, a {
+        color: orangered;
+    }
+    /*Child Selector, changes the color of all h2 headers within the body*/
+    body > h2 {
+        color: orangered;
+    }
+    /*Sibling Selector, changes the color of a unordered list after paragraphs*/
+    p ~ ul {
+        color: blue;
+    }
+    /*Adjacent Sibling Selector, changes the color of a ordered list after a h2 header*/
+    h2 + ol {
+        color:blue;
+    }
+    /*Pseudo-element Selector, changes the color of user selected text*/
+    ::selection {
+        color: red;
+    }
+    /*Attribute Selector*/
+    [class|="header"] {
+        border: 5px;
+    }
+/*Media queries*/
+    /*Mobile*/
+    @media screen and (min-width: 800px) {
+    .projects_text {
+        display:flex;
+        align-items: center;
+    }
+    .header img {
+        width: 660px;
+        height: 220px;
+    }
+    td {
+        padding-right: 10px;
+    }
+    }
+    /*Tablet*/
+    @media screen and (min-width: 1000px) {
+    .header img {
+        width: 740px;
+        height: 246px;
+    }
+    td {
+        padding-right: 15px;
+    }
+    .experience {
+        grid-template-columns: 150px 150px 150px;
+        grid-template-rows: 200px;
+    }
+    .jobs {
+        grid-row: 1;
+        grid-column: 1;
+    }
+    .education {
+        grid-row: 1;
+        grid-column: 2;
+    }
+    .projects {
+        grid-row: 1;
+        grid-column: 3;
+    }
+    }
